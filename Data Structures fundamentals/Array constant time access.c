@@ -1,8 +1,9 @@
 #include<stdio.h>
+#define names 10
 
 void main(void)
 {
-	const char array[10][25] =
+	const char array[names][25] =
 	{
 	"Shaheer Akram",
 	"Yasir khatri",
@@ -14,7 +15,7 @@ void main(void)
 	};
 	const char *ptr = &array[0][0];
 	int i = 0;
-	for (i = 0; i<10;i++)
+	for (i = 0; i<names;i++)
 		printf("%s\n",(ptr+25*(i)));
 	
 }

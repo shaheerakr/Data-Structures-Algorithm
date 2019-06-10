@@ -17,6 +17,7 @@ void print();
 void popFront(node list);
 void pop(node list);
 void pop_char(node list, const char name);
+void sort(node list);
 
 node head = NULL;
 
@@ -135,5 +136,9 @@ void pop_char(node list, const char name){
 		list = list->next;
 	}
 	return;
+}
+void sort(node list)
+{
+	
 }
 
